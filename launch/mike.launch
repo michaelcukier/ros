@@ -1,0 +1,14 @@
+<launch>
+    <node
+        pkg='mike'
+        type='capture_webcam.py'
+        name='webcam_pub'
+        output='screen'
+    />
+    <node
+        pkg='mike'
+        type='transform_img.py'
+        name='webcam_sub'
+        output='screen'
+    />
+</launch>
